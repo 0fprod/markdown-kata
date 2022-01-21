@@ -9,4 +9,11 @@ describe('Tests de lectura', () => {
     // Assert
     expect(contenido).toEqual('# titulo irrelevante')
   })
+
+  it('lanza un error cuando el fichero no existe', async () => {
+    // Arrange
+    const ruta = './src/markdown-repository/subcarpeta/fichero-inexistente.md'
+    // Assert
+    await expect(() => leerMarkdown(ruta)).rejects.toThrow('Error: El fichero no existe')
+  })
 })

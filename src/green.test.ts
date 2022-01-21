@@ -1,5 +1,4 @@
 describe('Basic tests', () => {
-  it('Always green', () => {
-    expect(true).toBe(true)
-  })
+  it.todo('es capaz de leer un fichero markdown')
+  it.todo('es capaz de escribir un fichero markdown')
 })
